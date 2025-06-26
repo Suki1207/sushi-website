@@ -1,0 +1,138 @@
+.trends {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.trends__discover {
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 100%;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  left: 44%;
+  position: absolute;
+  top: 44%;
+  width: 160px;
+  z-index: 1;
+}
+
+.trends__discover p {
+  color: #fff;
+  font-family: var(--plus-jakarta-sans);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.trends__sushi,
+.trends__drinks {
+  display: flex;
+  flex-direction: row;
+  min-height: 640px;
+  width: 100%;
+}
+
+.trends__info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px 64px;
+}
+
+.trends__list {
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.trends__list li {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 12px;
+  min-width: 210px;
+}
+
+.trends__icon {
+  background-color: var(--primary-color);
+  border-radius: 100%;
+  height: 24px;
+  width: 24px;
+}
+
+.trends__icon img {
+  height: 50%;
+  object-fit: contain;
+  width: 50%;
+}
+
+.trends__list p {
+  color: var(--secondary-color);
+  flex: 1;
+  font-family: var(--plus-jakarta-sans);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.trends__visual {
+  background-color: var(--color-white);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: 1;
+  padding: 32px 64px;
+  position: relative;
+}
+
+.trends__visual img {
+  height: 260px;
+  object-fit: contain;
+  width: 254px;
+}
+
+/* ARROWS */
+.trends__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trends__arrow img {
+  object-fit: contain;
+}
+
+.trends__arrow-left {
+  left: -2.5px;
+  top: 12%;
+}
+
+.trends__arrow-left img,
+.trends__arrow-top img {
+  height: 100%;
+  width: auto;
+}
+
+.trends__arrow-top {
+  left: 12%;
+  top: -10.5px;
+}
+
+.trends__arrow-bottom {
+  bottom: -6.5px;
+  right: 12%;
+}
+
+.trends__arrow-bottom img,
+.trends__arrow-right img {
+  height: auto;
+  width: 100%;
+}
+
+.trends__arrow-right {
+  bottom: 12%;
+  right: -2.5px;
+}
